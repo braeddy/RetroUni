@@ -7,7 +7,8 @@ module.exports = {
   },
   plugins: [require('daisyui'),
             require('preline/plugin'),
-            require("rippleui")],
+            require("rippleui"),
+            require('@tailwindcss/forms'),],
   daisyui: {
     themes: [
       "light",
