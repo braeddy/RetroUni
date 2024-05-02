@@ -1,2 +1,5 @@
 <script src="./node_modules/preline/dist/preline.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rubik+Mono+One&family=VT323&display=swap" rel="stylesheet">
 

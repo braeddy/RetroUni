@@ -3,7 +3,13 @@ module.exports = {
   content: ["./*.html",
             "node_modules/preline/dist/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Kode: ["Kode Mono", "sans-serif"],
+        VT323: ["VT323", "sans-serif"],
+        Rubik: ["Rubik Mono One", "sans-serif"]
+      }
+    },
   },
   plugins: [require('daisyui'),
             require('preline/plugin'),
