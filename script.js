@@ -6,25 +6,25 @@ Date.toString = function() {
     let month = date.getMonth()
     switch (day) {
         case 0:
-            ris += 'Domenica'
+            ris += '<span style="color: #e11d48;">Domenica</span>'
             break
         case 1:
-            ris += 'Lunedì'
+            ris += '<span style="color: #0284c7;">Lunedì</span>'
             break
         case 2:
-            ris += 'Martedì'
+            ris += '<span style="color: #0284c7;">Martedì</span>'
             break
         case 3:
-            ris += 'Mercoledì'
+            ris += '<span style="color: #0284c7;">Mercoledì</span>'
             break
         case 4:
-            ris += 'Giovedì'
+            ris += '<span style="color: #0284c7;">Giovedì</span>'
             break
         case 5:
-            ris += 'Venerdì'
+            ris += '<span style="color: #0284c7;">Venerdì</span>'
             break
         case 6:
-            ris += 'Sabato'
+            ris += '<span style="color: #0284c7;">Sabato</span>'
             break
 
     }
