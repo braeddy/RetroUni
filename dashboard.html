@@ -12,22 +12,50 @@
         href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rubik+Mono+One&family=VT323&display=swap"
         rel="stylesheet">
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet"
+        media="print">
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type='text/javascript'
+        src='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js'></script>
+    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js'></script>
     <script>
 
-        document.addEventListener('DOMContentLoaded', function () {
+        /*document.addEventListener('DOMContentLoaded', function () {
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'dayGridMonth',
                 height: 500,
-                
+                events: {
+                    googleCalendarId: 'francesco.frediani@gmail.com'
+                }
+                ,
+                eventClick: function (info) {
+                    alert('Event: ' + info.event.title);
+                }
 
             });
             calendar.render();
-        });
+        });*/
 
 
 
     </script>
+    <script type='text/javascript'>
+        // posting this because the following is a poor example https://fullcalendar.io/docs/google_calendar/
+        // This was used to wrap google calendar in squarespace and make it look tremendously better
+        $(document).ready(function() {
+        $('#calendar').fullCalendar({
+        googleCalendarApiKey: 'AIzaSyCuO-rxcEC-SBwKik_ylpauPXPEInOAASo',
+        events: {
+        googleCalendarId: 'francesco.frediani@gmail.com'
+        },
+        });
+        });
+        </script>
+
+        
 
 </head>
 
